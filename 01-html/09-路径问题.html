@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>路径</title>
+</head>
+
+<body>
+    <p>绝对路径</p>
+    <!-- 
+        从指定的盘符找:
+        如src="C:\Users\iswan\Desktop\Web\01-h5-css\01-html\images\QRCode.jpg"
+
+        注意:1.路径中最好不要出现中文,否则有可能会有错误
+     -->
+    <img src="C:\Users\iswan\Desktop\Web\01-h5-css\01-html\images\QRCode.jpg">
+
+    <p>相对路径(掌握)</p>
+    <br>
+    <!-- 相对路径
+1.1同级
+同级就是"图片"和".html文件"存储在同一个文件夹中
+格式: src="QRCode.jpg"
+含义: 在.html文件所在的文件夹中查找名称叫做QRCode.jpg的图片
+
+1.2下级
+下级就是"存储图片的文件夹"和".html文件"在同一个文件夹中
+格式: src="images/QRCode.jpg"
+含义: 在.html文件所在的文件夹中找到名称叫做images的文件夹
+然后再在images文件夹中找到名称叫做QRCode.jpg的图片
+
+1.3上级
+上级就是"存储图片的位置"和存"储代码的文件夹"在同一个文件夹中
+格式: src="../QRCode.jpg"
+含义：在.html文件所在的文件夹中找到这个文件夹的上一级文件夹, 然后再在上一级文件夹中找到名称叫做QRCode.jpg
+其中../代表找到当前文件夹的上一级文件夹
+
+注意:相对路径不能跨盘符
+    -->
+    <img src="images/QRCode.jpg">
+    <img src="QRCode.jpg">
+    <img src="..\QRCode.jpg">
+    <!-- ../代表找到当前文件夹的上一级文件夹 -->
+</body>
+
+</html>
