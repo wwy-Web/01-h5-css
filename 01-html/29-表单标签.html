@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单标签</title>
+</head>
+
+<body>
+    <!--  action  ->URL	 -> 规定当提交表单时向何处发送表单数据。-->
+    <form action="http://www.baidu.com">
+        <!-- 明文输入框 -->
+        账号: <input type="text" name="aa" id=""><br>
+
+        <!-- 暗文输入框 -->
+        密码: <input type="password" name="" id=""><br>
+
+        <!-- 定义一个普通按钮,配合完成js操作 -->
+        <input type="button" value="我是按钮" onclick="alert('lnj')">
+        <!-- 定义图片按钮:配合完成js操作 -->
+        <input type="image" src="images/register.jpg" onclick="alert('hello')">
+
+        <!-- 重置按钮:reset 作用:清空表单中的数据: 也可以通过value属性修改默认标题 -->
+        <input type="reset" value="清空">
+        <!-- 提交按钮:submit 作用:将表单中的数据提交到远程的服务器
+        满足条件: 1.提交到那个服务器,使用form中的action属性告诉表单提交到那个服务器
+                2.告诉表单,表单中的那些数据需要提交
+        -->
+        <input type="submit" value="submit">
+        <!-- 隐藏域: 作用: 用于悄悄咪咪的收集用户的一些数据, 隐藏域是不会出现在界面中的-->
+        <input type="hidden" name="cc" value="it666">
+    </form>
+
+</body>
+
+</html>

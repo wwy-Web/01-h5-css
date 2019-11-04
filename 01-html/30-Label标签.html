@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Label标签</title>
+</head>
+
+<body>
+
+    <!-- 文字和输入框绑定需要使用label标签 -->
+    <!-- 
+        方法1:将文字使用label包裹,设置input中的id值,让label中的id值等于label中的for值
+        这种方法也可以交叉绑定
+     -->
+    <label for="account">账号:</label><input type="text" name="" id="account"><br>
+    <label for="pwd">密码:</label><input type="password" name="" id="pwd"><br>
+
+    <hr>
+    <!-- 方法2:将input和文字都放在一个label中,注意:要去掉label中的for和input中的id -->
+    <label>
+        账号: <input type="text" name="">
+    </label><br>
+    <label>
+        密码: <input type="password" name="">
+    </label>
+
+    <!-- 推荐使用第一种 -->
+</body>
+
+</html>

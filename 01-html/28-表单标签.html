@@ -31,8 +31,22 @@
         密码:<input type="password" value="123456"><br>
 
         <!-- 
-            单选框
+            单选框:
+
+           - 默认单选框不会互斥:如果想要互斥必须给单选框设置一个name属性,name的值设置为相同
+           - 默认选中,可以给input添加一个checked属性
+           - 在HTML中如果属性的取值和属性的名称一样, 可以只写一个. 但是在XHTML中必须写上取值, 所以在企业开发中我们推荐大家不要省略取值
          -->
+         性别:
+         <input type="radio" name="xx" checked>男
+         <input type="radio" name="xx" id="">女
+         <input type="radio" name="xx" id="">同性恋
+
+         <!-- 多选框 -->
+         <input type="checkbox" name="" id="">篮球
+         <input type="checkbox" name="" id="">足球
+         <input type="checkbox" name="" id="" checked>棒球
+         <input type="checkbox" name="" id="" checked>羽毛球
 
     </form>
 </body>
