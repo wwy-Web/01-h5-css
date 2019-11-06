@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单练习</title>
+</head>
+
+<body>
+    <form action="http://www.baidu.com">
+        <fieldset>
+            <legend>注册界面</legend>
+            <p>
+                账号: <input type="text" name="account">
+            </p>
+            <p>
+                密码: <input type="password" name="pwd">
+            </p>
+            <!-- 
+            单选和多选框,项目的name必须一致,表单标签中除了按钮,都可以使用value指定提交到服务器的数据
+         -->
+         
+            <p>
+                性别:
+                <input type="radio" name="gender" value="male">男
+                <input type="radio" name="gender" value="female">女
+                <input type="radio" name="gender" value="baomi" checked="checked">保密
+            </p>
+            <p>
+                爱好:
+                <input type="checkbox" name="sport" value="basketball">篮球
+                <input type="checkbox" name="sport" value="football">足球
+                <input type="checkbox" name="sport" id="" checked="checked" value="crazy">洗脚
+            </p>
+            <p>
+                简介:
+                <textarea name="desc" id="" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                生日:
+                <input type="date" name="birthday" id="">
+            </p>
+            <p>
+                邮箱:
+                <input type="email" name="email" id="">
+            </p>
+            <p>
+                电话:
+                <input type="number" name="tel" id="">
+            </p>
+            <p>
+                <input type="submit" value="注册">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="清空">
+            </p>
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
